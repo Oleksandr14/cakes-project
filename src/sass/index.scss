@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/vars';
+@import './utils/mixins';
+@import './components/common';
+
+@import './components/header/header';
+@import './components/hero/hero';
+
+
