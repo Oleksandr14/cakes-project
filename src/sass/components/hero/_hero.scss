@@ -1,11 +1,15 @@
+.hero {
+position: relative;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+overflow: hidden;
+}
+
 .hero__wrapper {
-    position: relative;
     display: flex;
     align-items: center;
     height: 100vh;
     color: $second-text-color;
-    overflow: hidden;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
 }
 
 .hero_row {
