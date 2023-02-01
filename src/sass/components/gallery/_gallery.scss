@@ -1,4 +1,4 @@
-.gallery {
+.gallery-section {
     background-color: $first-background-color;
     
     &__wrapper {
@@ -16,9 +16,7 @@
 
     &--item {
         position: relative;
-        flex-basis: calc((100% - 2 * 30px) / 3);
-
-        
+        flex-basis: calc((100% - 2 * 30px) / 3);    
     }
 
     &--item::after {
@@ -41,8 +39,4 @@
     &--item:hover::after {
         opacity: 1;
     }
-}
-
-.gallery__list--item img {
-    width: 100%;
 }
