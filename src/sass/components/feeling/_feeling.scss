@@ -1,0 +1,62 @@
+.feeling {
+    background-color: $dark-background-color;
+}
+
+.feeling__wrap {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.feeling__row {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 58px;
+
+    &--title {
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 1.21;
+        color: $second-text-color;
+    }
+
+    &--link {
+        @extend %button;
+        padding: 14px 21px;
+
+        transition: background-color $transition-time $cubic, color $transition-time $cubic;
+    }
+
+    &--link:hover,
+    &--link:focus {
+        background-color: $accent-color;
+        color: $second-text-color;
+    }
+}
+
+.feeling__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feeling__item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}
+
+.feeling__item img {
+    width: 100%;
+}
+
+.feeling__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.44;
+    color: $second-text-color;
+    text-align: center;
+}
