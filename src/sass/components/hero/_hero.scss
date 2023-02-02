@@ -16,6 +16,11 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     row-gap: 9px;
+
+    @include mobile {
+        row-gap: 25px;
+    }
+
 }
 
 .hero__title {
@@ -23,17 +28,42 @@ overflow: hidden;
     font-size: 60px;
     line-height: 1.21;
     color: $second-text-color;
+
+    @include before-desktop {
+        font-size: 55px;
+    }
+
+    @include tablet {
+        font-size: 45px;
+    }
+
+    @include mobile {
+        font-size: 35px;
+    }
 }
 
 .hero__list {
     display: flex;
     column-gap: 30px;
 
+    @include mobile {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
     &--item {
     font-size: 19px;
     line-height: 1.42;
 
     transition: color $transition-time $cubic;
+
+    @include before-desktop {
+            font-size: 17px;
+        }   
+
+    @include mobile {
+            font-size: 15px;
+        }
     }
 
     &--item:hover,

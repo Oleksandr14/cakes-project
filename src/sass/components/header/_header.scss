@@ -25,9 +25,6 @@
         padding: 22px 0;
     }
 
-    @include tablet {
-        padding: 20px 0;
-    }
 }
 
 .logo {
@@ -40,10 +37,6 @@
 
     @include before-desktop {
         font-size: 35px;
-    }
-
-    @include desktop-1050 {
-        font-size: 30px;
     }
 
     @include tablet {
@@ -80,7 +73,6 @@
         }
 
         @include desktop-1050 {
-            font-size: 10px;
             column-gap: 16px;
         }
 
