@@ -2,11 +2,31 @@
     background-color: $first-background-color;
 }
 
+.footer__logo {
+    @include mobile {
+        
+        text-align: center;
+
+    }    
+}
+
 .footer__wrap {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
     padding: 160px 0 70px;
+
+    @include tablet {
+        padding: 100px 0 35px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 35px;
+        padding: 60px 0 15px;
+    }
 }
 
 .footer__wrap > div {
@@ -17,6 +37,10 @@
     font-size: 15px;
     line-height: 24px;
     color: $first-text-color;
+
+    @include tablet {
+        font-size: 12px;
+        }
 }
 
 .logo-color {
@@ -30,7 +54,22 @@
     line-height: 1.22;
     color: $first-text-color;
 
+    @include tablet {
+            font-size: 15px;
+        }
+
+                @include mobile {
+                    margin-bottom: 18px;
+                    text-align: center;
+                }
+
 }
+
+// .footer__menu {
+//     @include mobile {
+
+//     }
+// }
 
 .footer__menu--list {
     display: flex;
@@ -40,6 +79,14 @@
     font-size: 15px;
     line-height: 1.26;
     color: $accent-color;
+
+    @include tablet {
+            font-size: 12px;
+        }
+
+                @include mobile {
+                    align-items: center;
+                }
 
 }
 
@@ -60,6 +107,14 @@
     font-size: 15px;
     line-height: 1.26;
     color: $first-text-color;
+
+    @include tablet {
+            font-size: 12px;
+        }
+
+                @include mobile {
+                    align-items: center;
+                }
 }
 
 .footer__contacts--list a {
@@ -76,6 +131,10 @@
     font-size: 14px;
     line-height: 1.71;
     color: $first-text-color;
+
+    @include tablet {
+            font-size: 11px;
+        }
 }
 
 .social__footer {
