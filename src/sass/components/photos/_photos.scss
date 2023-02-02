@@ -7,6 +7,14 @@
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+
+    @include tablet {
+        padding: 70px 0 50px;
+    }
+
+    @include mobile {
+        padding: 30px 0;
+    }
 }
 
 .photos__title {
@@ -15,6 +23,11 @@
     font-size: 47px;
     line-height: 1.21;
     color: $first-text-color;
+
+    @include tablet {
+        margin-bottom: 20px;
+            font-size: 34px;
+        }
 }
 
 .gallery {
@@ -22,6 +35,12 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 10px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 
     &__item--1 {
     grid-column-start: 1;
