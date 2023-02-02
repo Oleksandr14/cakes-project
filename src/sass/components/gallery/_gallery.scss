@@ -2,8 +2,24 @@
     background-color: $first-background-color;
     
     &__wrapper {
-            padding: 90px 0 100px;
-        }
+        padding: 90px 0 100px;
+
+    @include before-desktop {
+        padding: 70px 0 80px;
+    }
+
+    @include desktop-1050 {
+        padding: 60px 0 70px;
+    }
+
+    @include tablet {
+        padding: 50px 0 60px;
+    }
+
+    @include mobile {
+        padding: 30px 0 30px;
+    }
+    }
 
 }
 
@@ -14,9 +30,42 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    @include desktop {
+        gap: 25px;
+    }
+
+    @include before-desktop {
+        gap: 20px;
+    }
+
+    @include desktop-1050 {
+        gap: 15px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
     &--item {
         position: relative;
-        flex-basis: calc((100% - 2 * 30px) / 3);    
+        flex-basis: calc((100% - 2 * 30px) / 3);
+        
+        @include desktop {
+            flex-basis: calc((100% - 2 * 25px) / 3);
+        }
+
+        @include before-desktop {
+            flex-basis: calc((100% - 2 * 20px) / 3);
+        }
+
+        @include desktop-1050 {
+            flex-basis: calc((100% - 2 * 15px) / 3);
+        }
+
+        @include tablet {
+            flex-basis: calc((100% - 15px) / 2);
+        }
     }
 
     &--item::after {
