@@ -5,6 +5,16 @@
 .feeling__wrap {
     padding-top: 70px;
     padding-bottom: 100px;
+
+    @include desktop-1050 {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    @include tablet {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
 
 .feeling__row {
@@ -13,11 +23,37 @@
     column-gap: 40px;
     margin-bottom: 58px;
 
+    @include desktop-1050 {
+        margin-bottom: 48px;
+    }
+
+    @include tablet {
+        margin-bottom: 38px;
+    }
+
+    @include mobile {
+        margin-bottom: 38px;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+
     &--title {
         font-weight: 700;
         font-size: 47px;
         line-height: 1.21;
         color: $second-text-color;
+
+        @include desktop-1050 {
+            font-size: 37px;
+        }
+
+        @include tablet {
+            font-size: 32px;
+        }
+
+        @include mobile {
+            font-size: 28px;
+        }
     }
 
     &--link {
@@ -25,6 +61,15 @@
         padding: 14px 21px;
 
         transition: background-color $transition-time $cubic, color $transition-time $cubic;
+    
+        @include desktop-1050 {
+            padding: 10px 17px;
+        }
+
+        @include desktop-1050 {
+            padding: 8px 15px;
+        }
+
     }
 
     &--link:hover,
@@ -40,6 +85,14 @@
     gap: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet {
+        gap: 20px;
+    }
+
+    @include mobile {
+        gap: 15px;
+    }
 }
 
 .feeling__item {
@@ -47,6 +100,19 @@
     display: flex;
     flex-direction: column;
     row-gap: 21px;
+
+    @include desktop-1050 {
+        row-gap: 17px;
+    }
+
+    @include tablet {
+        flex-basis: calc((100% - 2 * 20px) / 3);
+    }
+
+    @include mobile {
+        flex-basis: calc((100% - 15px) / 2);
+        row-gap: 10px;
+    }
 }
 
 .feeling__text {
@@ -55,4 +121,8 @@
     line-height: 1.44;
     color: $second-text-color;
     text-align: center;
+
+    @include desktop-1050 {
+        font-size: 16px;
+    }
 }
