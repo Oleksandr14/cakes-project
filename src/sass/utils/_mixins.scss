@@ -1,17 +1,30 @@
-// @mixin mobile {
-//     @media screen and (max-width: 767px) {
-//         @content;
-//     }
-// }
+@mixin desktop {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
 
-// @mixin tablet {
-//     @media screen and (min-width: 768px) {
-//         @content;
-//     }
-// }
+@mixin before-desktop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
 
-// @mixin desktop {
-//     @media screen and (min-width: 1280px) {
-//         @content;
-//     }
-// }
+@mixin desktop-1050 {
+    @media screen and (max-width: 1050px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media screen and (min-width: 320px)  and (max-width:767px){
+        @content;
+    }
+}

@@ -12,15 +12,52 @@
     align-items: center;
     padding: 30px 0;
     color: $second-text-color;
+
+    @include desktop {
+        padding: 26px 0;
+    }
+
+    @include before-desktop {
+        padding: 24px 0;
+    }
+
+    @include desktop-1050 {
+        padding: 22px 0;
+    }
+
+    @include tablet {
+        padding: 20px 0;
+    }
 }
 
 .logo {
     font-weight: 400;
     font-size: 50px;
+
+    @include desktop {
+        font-size: 40px;
+    }
+
+    @include before-desktop {
+        font-size: 35px;
+    }
+
+    @include desktop-1050 {
+        font-size: 30px;
+    }
+
+    @include tablet {
+        font-size: 28px;
+    }
     
 }
 
 .navigate {
+
+    @include mobile {
+        display: none;
+    }
+
     &__list {
         display: flex;
         align-items: center;
@@ -31,6 +68,25 @@
         line-height: 1.18;
         letter-spacing: 1px;
         text-transform: uppercase;
+
+        @include desktop {
+            font-size: 14px;
+            column-gap: 20px;
+        }
+
+        @include before-desktop {
+            font-size: 12px;
+            column-gap: 18px;
+        }
+
+        @include desktop-1050 {
+            font-size: 10px;
+            column-gap: 16px;
+        }
+
+        @include tablet {
+            column-gap: 13px;
+        }
     }
 
     &__item {
@@ -49,6 +105,10 @@
     column-gap: 20px;
     fill: $second-text-color;
 
+    @include mobile {
+            display: none;
+        }
+
     &__item {
         transition: fill $transition-time $cubic;
     }
@@ -57,6 +117,35 @@
     &__item:focus {
         fill: $accent-color;
     }
+
+    @include desktop {
+        column-gap: 18px;
+    }
+
+    @include before-desktop {
+        column-gap: 16px;
+    }
+
+    @include desktop-1050 {
+        column-gap: 14px;
+    }
+
+    @include tablet {
+        column-gap: 10px;
+    }
+}
+
+.header__socials--icon {
+
+    @include desktop-1050 {
+            width: 17px;
+            height: 17px;
+        }
+
+    @include tablet {
+            width: 15px;
+            height: 15px;
+        }
 }
 
 .header__contacts {
@@ -65,8 +154,41 @@
     font-size: 19px;
     line-height: 1.21;
 
+
+    @include mobile {
+
+    display: none;
+
+    }
+
     &--icon {
         fill: $accent-color;
+
+        @include desktop-1050 {
+            width: 25px;
+            height: 25px;
+        }
+
+        @include tablet {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    @include desktop {
+        font-size: 17px;
+    }
+
+    @include before-desktop {
+        font-size: 15px;
+    }
+
+    @include desktop-1050 {
+        column-gap: 12px;
+    }
+
+    @include tablet {
+        column-gap: 10px;
     }
 }
 
@@ -74,4 +196,21 @@
      display: flex;
      align-items: center;
      column-gap: 15px;
+
+    @include desktop {
+        column-gap: 13px;
+    }
+
+    @include before-desktop {
+        column-gap: 11px;
+    }
+
+    @include desktop-1050 {
+        column-gap: 9px;
+    }
+
+    @include tablet {
+        column-gap: 8px;
+    }
  }
+

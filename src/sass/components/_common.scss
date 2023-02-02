@@ -6,7 +6,27 @@ body {
 .container {
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 15px;    
+    padding: 0 15px;
+    
+    @include desktop {
+        max-width: 1300px;
+    }
+
+    @include before-desktop {
+        max-width: 1200px;
+    }
+
+    @include desktop-1050 {
+        max-width: 1050px;
+    }
+
+    @include tablet {
+        max-width: 950px;
+    }
+
+    @include mobile {
+        max-width: 480px;
+    }
 }
 
 a {
