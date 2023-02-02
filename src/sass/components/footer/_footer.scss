@@ -1,0 +1,104 @@
+.footer {
+    background-color: $first-background-color;
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 160px 0 70px;
+}
+
+.footer__wrap > div {
+    flex-basis: calc(100%  / 4);
+}
+
+.footer__logo p {
+    font-size: 15px;
+    line-height: 24px;
+    color: $first-text-color;
+}
+
+.logo-color {
+    color: $accent-color;
+}
+
+.footer__title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $first-text-color;
+
+}
+
+.footer__menu--list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    font-size: 15px;
+    line-height: 1.26;
+    color: $accent-color;
+
+}
+
+.footer__menu--list > li {
+    transition: color $transition-time $cubic;
+}
+
+.footer__menu--list > li:hover,
+.footer__menu--list > li:focus {
+    color: $first-text-color;
+}
+
+.footer__contacts--list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.26;
+    color: $first-text-color;
+}
+
+.footer__contacts--list a {
+    color: $accent-color;
+    transition: color $transition-time $cubic;
+}
+
+.footer__contacts--list a:hover,
+.footer__contacts--list a:focus {
+    color: $first-text-color;
+}
+
+.footer__descr > p {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $first-text-color;
+}
+
+.social__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.social__footer--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    fill: #888888;
+
+    transition: fill $transition-time $cubic;
+}
+
+.social__footer--icon:hover,
+.social__footer--icon:focus {
+    fill: $accent-color;
+}
