@@ -1,0 +1,24 @@
+.header-feeling {
+    background-color: $second-text-color;
+}
+
+.logo-feeling {
+    color: $accent-color;
+}
+
+.feeling-wrapper {
+    color: $first-text-color;
+}
+
+.socials-feeling {
+    fill: $accent-color;
+
+    &__item {
+         transition: fill $transition-time $cubic;
+    }
+    
+    &__item:hover,
+    &__item:focus {
+        fill: $first-text-color;
+    }
+}

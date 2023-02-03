@@ -1,0 +1,136 @@
+.cake-feeling-wrapper {
+    margin: 0 auto;
+    padding-top: 58px;
+    max-width: 1170px;
+
+    @include tablet {
+        padding-top: 48px;
+    }
+}
+
+.cake-feeling-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.cake-feeling-list__item {
+    flex-basis: calc(100% / 3);
+    padding: 20px 0 60px;
+
+    @include tablet {
+        flex-basis: calc(100% / 2);
+        padding: 15px 0 50px;
+    }
+
+        @include mobile {
+            padding: 5px 0 30px;
+        }
+
+    
+}
+
+.img-wrapper {
+    max-width: 264px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+
+    @include mobile {
+        max-width: 244px;
+    }
+}
+
+.cake-feeling-title {
+    margin-bottom: 58px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.08;
+    color: $first-text-color;
+
+    @include tablet {
+        font-size: 30px;
+    }
+}
+
+.cake-feeling-list__title {
+    position: relative;
+    margin-bottom: 48px;
+    padding-left: 23px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: 1.44px;
+    color: $first-text-color;
+
+    @include tablet {
+            font-size: 20px;
+        }
+
+                @include mobile {
+                    margin-bottom: 28px;
+                }
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 50px;
+    
+        background-color: $accent-color;
+    }
+}
+
+.cake-feeling-list__text {
+    margin-top: 10px;
+    max-width: 264px;
+    font-size: 14px;
+    line-height: 1.42;
+    color: $first-text-color;
+
+    @include tablet {
+            font-size: 12px;
+        }
+}
+
+.premium {
+    margin-top: 10px;
+   
+    padding: 3px 10px;
+    font-size: 10px;
+    max-width: 142px;
+    text-align: center;
+    line-height: 1.3;
+    color: $second-text-color;
+    background-color: $mobile-menu-color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @include tablet {
+            font-size: 8px;
+        }
+}
+
+//Description
+
+.descr-feeling-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.descr-feeling-list__item {
+    font-size: 16px;
+    line-height: 1.43;
+    color: $first-text-color;
+
+    @include tablet {
+            font-size: 14px;
+        }
+}

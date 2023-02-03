@@ -12,6 +12,10 @@
     width: 30px;
     height: 5px;
     background-color: #fff;
+
+    @include mobile {
+            background-color: $accent-color;
+        }
 }
 
 .menu-icon::before {
@@ -24,6 +28,10 @@
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 
+    @include mobile {
+            background-color: $accent-color;
+        }
+
 }
 
 .menu-icon::after {
@@ -35,6 +43,10 @@
     height: 5px;
     background-color: #fff;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+    @include mobile {
+            background-color: $accent-color;
+        }
 
 }
 
@@ -64,6 +76,7 @@
 
 .nav__toggle {
     background-color: transparent;
+
 }
 
 .nav-mobile {
