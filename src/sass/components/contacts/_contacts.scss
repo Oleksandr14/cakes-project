@@ -1,0 +1,90 @@
+.personal-contacts-wrapper {
+    display: flex;
+    padding: 40px 0;
+
+    & > div {
+        flex-basis: calc(100% / 2);
+    }
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+.our-contacts {
+    padding-right: 5px;
+}
+
+.contacts-title {
+    font-size: 24px;
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.order-title {
+    font-size: 18px;
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.pay-title {
+    font-size: 15px;
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.contacts-title--map {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+    color: $first-text-color;
+
+    & > li {
+        font-size: 15px;
+    }
+}
+
+.contacts-pay {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: $first-text-color;
+
+    & > li {
+            font-size: 14px;
+        }
+}
+
+.contacts-list--link {
+    color: $accent-color;
+
+    transition: color $transition-time $cubic;
+
+    &:hover,
+    &:focus {
+        color: $first-text-color;
+    }
+}
+
+.maps iframe {
+    @include desktop-1050 {
+        width: 600px;
+    }
+
+        @include tablet {
+            width: 500px;
+            height: 350px;
+        }
+
+                @include mobile {
+                    max-width: 100%;
+                }
+    
+}
